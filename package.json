@@ -19,18 +19,15 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
-
     "@ng-bootstrap/ng-bootstrap": "~7.0.0",
     "@nicky-lenaers/ngx-scroll-to": "~9.0.0",
+    "angular-cli-ghpages": "^1.0.3",
     "angular-count-to": "0.0.3",
     "bootstrap": "~4.5.0",
     "ngx-owl-carousel-o": "~4.0.0",
-
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
-
-
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.3.7",

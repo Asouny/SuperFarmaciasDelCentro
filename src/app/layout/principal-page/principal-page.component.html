@@ -6,7 +6,9 @@
         <!-- LOGO -->
         <a class="navbar-brand logo" href="">
             <img src="../assets/images/logo.png" alt="" class="" height="50">
-            <span class="text-primary font-weight-medium"> SUPER FARMACIA DEL CENTRO</span>
+            
+            <span [ngxScrollTo]="'#home'" href="javascript: void(0)" class="nav-link"
+                [ngxScrollToOffset]="2" class="text-primary font-weight-medium"> SUPER FARMACIA DEL CENTRO</span>
         </a>
 
         <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -42,7 +44,7 @@
 
 <div appScrollspy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
     <!-- Hero Start -->
-    <section class="hero-1-bg position-relative bg-light d-flex align-items-center" id="sobrenos">
+    <section class="hero-2-bg position-relative bg-light d-flex align-items-center" id="home">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -60,8 +62,11 @@
             </div>
         </div>
     </section>
-
     <!-- Hero End -->
-    <app-provedores></app-provedores>
 
+    <app-provedores></app-provedores>
+    <app-historia></app-historia>
+    <app-sobre-nostros></app-sobre-nostros>
 </div>
+
+<app-footer></app-footer>
