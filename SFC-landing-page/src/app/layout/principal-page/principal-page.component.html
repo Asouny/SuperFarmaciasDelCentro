@@ -1,0 +1,67 @@
+<!--Navbar Start-->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark" (window:scroll)="windowScroll()"
+    id="navbar">
+    <div class="container">
+
+        <!-- LOGO -->
+        <a class="navbar-brand logo" href="">
+            <img src="../assets/images/logo.png" alt="" class="" height="50">
+            <span class="text-primary font-weight-medium"> SUPER FARMACIA DEL CENTRO</span>
+        </a>
+
+        <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
+            <i class="mdi mdi-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+                <li class="nav-item" [ngClass]="{'active':currentSection === 'sobrenos'}">
+                    <a [ngxScrollTo]="'#sobrenos'" href="javascript: void(0)" class="nav-link"
+                        [ngxScrollToOffset]="2">Sobre nosotros</a>
+                </li>
+                <li class="nav-item" [ngClass]="{'active':currentSection === 'Servicios'}">
+                    <a [ngxScrollTo]="'#Servicios'" href="javascript: void(0);" class="nav-link"
+                        [ngxScrollToOffset]="2">Servicios</a>
+                </li>
+                <li class="nav-item" [ngClass]="{'active':currentSection === 'Proveedores'}">
+                    <a [ngxScrollTo]="'#Proveedores'" href="javascript: void(0);" class="nav-link"
+                        [ngxScrollToOffset]="2">Proveedores</a>
+                </li>
+                <li class="nav-item" [ngClass]="{'active':currentSection === 'Historia'}">
+                    <a [ngxScrollTo]="'#Historia'" href="javascript: void(0);" class="nav-link"
+                        [ngxScrollToOffset]="2">Historia</a>
+                </li>
+            </ul>
+            <div class="call-no">
+                <a href="#" class="text-primary font-weight-medium"><i class="mdi mdi-phone mr-1"></i> 319 232 758</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+<div appScrollspy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
+    <!-- Hero Start -->
+    <section class="hero-1-bg position-relative bg-light d-flex align-items-center" id="sobrenos">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-title pr-lg-5">
+                        <p class="text-uppercase text-primary font-weight-medium f-14 mb-4">¿Quienes somos?</p>
+                        <h1 class="hero-1-title mb-4 font-weight-normal line-height-1_4">Super <span class="text-primary font-weight-medium">Farmacia</span> del centro</h1>
+                        <p class="text-muted mb-4 pb-2">Somos una empresa 100% Nayarita, ubicada en Tuxpan. Comprometida con la localidad y el brindar una excelente atencion al cliente.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mt-5 mt-lg-0">
+                        <img src="../assets/images/logo.png" alt="" class="img-fluid mx-auto d-block img-farmacia-principallogo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero End -->
+    <app-provedores></app-provedores>
+
+</div>

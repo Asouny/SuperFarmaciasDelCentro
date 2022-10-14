@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+// Inmportaciones generales del scss
+
+@import "./assets/scss/variables";
+@import "./assets/scss/general";
+@import "./assets/scss/menu";
+@import "./assets/scss/components";
+@import "./assets/scss/helper";
+@import "./assets/scss/loader";
+@import "./assets/scss/hero";
+@import "./assets/scss/services";
+@import "./assets/scss/features";
+@import "./assets/scss/counter";
+@import "./assets/scss/testimonial";
+@import "./assets/scss/contact";
+@import "./assets/scss/subscribe";
+@import "./assets/scss/footer";
+
+
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
